@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koTomar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="onload()">
+    <button class="chat"><img src="images/whatsapp.png" alt=""></button>
+    <h1>קמפיין קמפוס "כה תאמר"</h1>
+    <main id="main">
+        <div class="video">
+            <video id="video" src="images/video.mp4" autoplay muted loop></video>
+        </div>
+        <button id="btn" onclick="passToCart()">מעבר לעגלה</button>
+        <button id="btn2" onclick="hideItemsD();DonationUser()">צפיה בתרומות</button>
+        <div id="items">
+
+        </div>
+        <div id="cart" class="hide">
+           
+        </div>
+        <div id="DonationDiv" class="hide">
+          
+        </div>
+        <!-- <div id="thankYouLetter">
+            
+        </div> -->
+        <div id="formD">
+            <h2>אנו מודים לכם על רצונכם לתרום לקמפוס שלנו</h2>
+            <div class="Content1">
+                <form method="get" action="form.html" onsubmit="onsubmit(event)">
+                    <label>שם פרטי</label>
+                    <input name="name" type="text">
+                    <label>שם משפחה</label>
+                    <input name="lastName" type="text">
+                    <label>תעודת זהות של בעל הכרטיס</label>
+                    <input name="idU" type="text">
+                    <label>מספר אשראי</label>
+                    <input name="creditNumber" type="text">
+                    <label>תוקף כרטיס</label>
+                    <input name="cardValidity" type="date">
+                    <label>cvv</label>
+                    <input name="cvv" type="text">
+                    <label>האם תרמת בעבר ל"כה תאמר"?</label>
+                    <div class="registration">
+                        <labelsaveCart>כן<input name="registration" type="radio" value="true"></labelsaveCart>
+                        <label>לא<input name="registration" type="radio" value="false"></label>
+                    </div>
+                   <p></p>
+                        <button type="submit" onclick="saveCart()">שלח את הטופס</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <div id="login_page" class="bg-img">
+
+        <form id="login_form" class="container show" onsubmit="onLoginSubmit(event)">
+            <h2>טופס התחברות</h2>
+            <label for="email"><b>אימייל</b></label>
+            <input type="text" placeholder="הכנס אימייל" name="email" required>
+
+            <label for="psw"><b>סיסמה</b></label>
+            <input type="password" placeholder="הכנס סיסמה" name="psw" required>
+
+            <div id="login_error"></div>
+
+            <button type="submit" class="btn">התחבר</button>
+
+            <div class="container signin">
+                <p>אין לך חשבון? <a href="" onclick="showRegister(event)">הירשם עכשיו! .</a>.</p>
+            </div>
+        </form>
+
+        <form id="regiter_form" class="hide" onsubmit="onRegisterSubmit(event)">
+            <div class="container">
+                <h2>הירשם</h2>
+                <hr>
+
+                <label><b>שם</b></label>
+                <input type="text" placeholder="הכנס שם משתמש" name="username" required />
+                <label><b>פלאפון</b></label>
+                <input type="text" placeholder="הזן פלאפון" name="phone" required />
+                <label><b>כתובת</b></label>
+                <input type="text" placeholder="הכנס כתובת" name="address" required />
+                <label><b>אימייל</b></label>
+                <input type="text" placeholder="הזן אימייל" name="email" required />
+
+                <label for="psw"><b>סיסמה</b></label>
+                <input type="password" placeholder="הכנס סיסמה" name="psw" id="psw" required>
+                <hr>
+
+                <button type="submit" class="registerbtn">הירשם</button>
+            </div>
+
+            <div class="container signin">
+                <p>כבר יש לך חשבון? <a href="" onclick="showLogin(event)">התחברות .</a>.</p>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="user_profile_page" class="hide">
+
+    </div>
+   
+
+    <script src="index.js"></script>
+</body>
+
+</html>
