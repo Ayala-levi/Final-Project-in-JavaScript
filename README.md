@@ -1,6 +1,6 @@
-## Interactive Donation Website for the "So You Say" Campus
+## Interactive Donation Website for the "Ko Tomar" Campus
 ### Project Description
-This website is designed to raise funds for the future campus of "So You Say." It enables donors to register, view their donations, select items to donate from a list, and make payments. The site provides an interactive and user-friendly donation experience.
+This website is designed to raise funds for the future campus of "Ko Tomar." It enables donors to register, view their donations, select items to donate from a list, and make payments. The site provides an interactive and user-friendly donation experience.
 
 ### Technologies
 - **HTML:** Website structure and content
